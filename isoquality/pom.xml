@@ -62,6 +62,8 @@
 			<scope>test</scope>
 		</dependency>
 
+
+
 		<!-- CGLib for @Configuration -->
 		<dependency>
 			<groupId>cglib</groupId>

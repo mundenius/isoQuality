@@ -17,6 +17,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 </head>
+<style>
+</style>
 <body>
 <%@include file="fixed/navbar.jsp" %>
 
@@ -44,7 +46,7 @@
 
                     </p>
                 </div>
-                <div class="col-md-12 col-lg-5 pt-md-3">
+                <div class="col-md-12 col-lg-5 pt-md-3 ">
                 <div id="tarjetasDaniel" class="card">
                     <div class="card_landing" style="--i:url(img/daniel.jpg)">
                     </div>
