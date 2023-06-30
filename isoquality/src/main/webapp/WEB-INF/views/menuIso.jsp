@@ -295,7 +295,7 @@
         <br>
         
         <div class="col text-center">
-            <a type="button" class="btn btn-primary" href="<c:url value='/contacto'/>">Evaluación
+            <a type="button" class="btn btn-primary btn-lg btn-block" href="<c:url value='/contacto'/>">Evaluación
                 Gratuita</a>
         </div>
 
