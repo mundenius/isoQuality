@@ -46,28 +46,59 @@
 
                     </p>
                 </div>
-                <div class="col-md-12 col-lg-5 pt-md-3 ">
-                <div id="tarjetasDaniel" class="card">
-                    <div class="card_landing" style="--i:url(img/daniel.jpg)">
-                    </div>
-                    <div id="tarjetasDaniel" class="card_info">
-                        <div id="tarjetasDaniel" class="content">
-                            <div class="col-md px-md-2">
+                <div class="col-md-12 col-lg-5 pt-md-3 d-none d-md-block">
+                    <div class="row">
+                        <div class="col-12">
+                            <div id="tarjetasDaniel" class="card">
+                                <div class="card_landing" style="--i:url(img/daniel.jpg)">
+                                </div>
+                                <div id="tarjetasDaniel" class="card_info">
+                                    <div id="tarjetasDaniel" class="content">
+                                        <div class="col-md px-md-2">
 
-                                <h3>Daniel Saldías H.</h3>
+                                            <h3>Daniel Saldías H.</h3>
 
-                                <h5>Cofundador / Consultor Senior</h5>
+                                            <h5>Cofundador / Consultor Senior</h5>
 
-                                <p>daniel@isoquality.cl</p>
+                                            <p>dsaldias@isoquiality.cl</p>
 
-                            </div>
-                            <div class="action">
-                                <a href="contacto.html" class="btn">Contacto</a>
+                                        </div>
+                                        <div class="action">
+                                            <a href="contacto.html" class="btn">Contacto</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+                <div class="col-sm-12 d-md-none">
+                    <div class="row">
+                        <div class="col-12">
+                            <div id="tarjetasDaniel" class="card">
+                                <div class="card_landing" style="--i:url(img/daniel.jpg)">
+                                </div>
+                                <div id="tarjetasDaniel" class="card_infox">
+                                    <div id="tarjetasDaniel" class="content">
+                                        <div class="col-sm">
+
+                                            <h3>Daniel Saldías H.</h3>
+
+                                            <h5>Cofundador / Consultor Senior</h5>
+
+                                            <p>dsaldias@isoquiality.cl</p>
+
+                                        </div>
+                                        <div class="action">
+                                            <a href="contacto.html" class="btn">Contacto</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="row pt-4">
                     <div class="col d-none d-lg-block">
                         <div id="qs_vision" class="image-container">
