@@ -467,7 +467,9 @@
             </div>
         </div>
         
- <%@include file="fixed/footer.jsp" %>
+		<div class="justify-content-center" id="footer">
+
+		</div>
    <script src="resources/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
     integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
