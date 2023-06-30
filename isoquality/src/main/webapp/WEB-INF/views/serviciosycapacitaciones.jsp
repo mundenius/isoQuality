@@ -49,10 +49,10 @@ to {
 			en sistemas de gestión de calidad. Nuestro objetivo es ayudar a las
 			organizaciones a alcanzar la excelencia y mejorar su desempeño a
 			través de la implementación de normas internacionales.</p>
-		<h2>
+		<h2 class="pb-1">
 			<small>Seminarios</small>
 		</h2>
-		<div id="carouselExampleIndicators" class="carousel slide"
+		<div id="carouselExampleIndicators" class="carousel slide py-2"
 			data-bs-ride="carousel">
 			<!-- <ol class="carousel-indicators">
                       <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
@@ -261,7 +261,7 @@ to {
 			<p class="stext-justify lead pt-2">Acompañamos las capacitaciones
 				solicitadas, con todo los complementos que requiera el cliente;
 				salones, coffee break, almuerzos, material impreso, merchandising,
-				demostraciones, dinámicas grupales, coaching.</p>
+				demostraciones, dinámicas grupales, coaching, entre otros.</p>
 		</div>
 
 		<!--       <h2><small>Talleres</small></h2>

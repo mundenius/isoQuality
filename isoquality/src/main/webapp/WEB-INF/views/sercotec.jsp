@@ -368,9 +368,8 @@ p {
 	<%@include file="fixed/navbar.jsp"%>
 	<section class="light text-dark fade-in">
 		<div class="container py-2">
-			<br>
-			<div class="h3 text-center text-dark">Asesoramiento y
-				Acompañamiento en la Obtención de Fondos Públicos</div>
+			<h2 class="text-center"><small>Asesoramiento y
+				Acompañamiento en la Obtención de Fondos Públicos</small></h2>
 			<br>
 			<article class="postcard light blue">
 

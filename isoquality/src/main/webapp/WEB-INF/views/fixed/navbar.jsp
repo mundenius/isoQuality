@@ -1,9 +1,13 @@
  <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %> 
+ <head>
+ <link rel="stylesheet" href="<c:url value='https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap'/>">
+ </head>
+ 
      <!-- HEADER: Logo y Nombre Empresa -->
     <div class="row">
       <div class="col"></div>
-      <div class="col-10">
-        <header class="opacity-85">
+      <div class="col-10 text-center">
+        <header class="opacity-85 text-center">
           <img src="resources/img/logo-rectangulo.png" id="logo-header" class="img-fluid">
         </header>
       </div>
