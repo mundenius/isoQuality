@@ -1,4 +1,6 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <!DOCTYPE html>
 
 <html>
@@ -10,59 +12,63 @@
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap">
+  <link rel="stylesheet" href="<c:url value='https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap'/>">
+  
   <link rel="stylesheet" href="resources/style.css">
    <!-- JQuery -->
    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <!--   Iconos de footer -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
+<style>
+p{
+font-size:1rem;
+}
+</style>
 <body>
+<div class="container-fluid">
 <%@include file="fixed/navbar.jsp" %>
 
-    <!-- Galeria Destacados -->
-    <section class="container-fluid buscadorcarrusel pt-3 fade-in">
-      <div class="destacados">
-        <div class="slide">
-          <div id="carouselExampleIndicators" class="carousel slide slide-home" data-ride="carousel">
-            <ol class="carousel-indicators" id="carousel-indicators"></ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="slidefijo">
-                  <div class="row">
-                    <div class="col-md-4">
-                      <a href="<c:url value='/menuiso'/>" id="left-column">
-                        <img src="resources/img/galeria-destacados/iso9001.png" class="img-fluid hover-effect" />
-                      </a>
-                      <a href="<c:url value='/menuiso'/>">
-                        <img src="resources/img/galeria-destacados/iso45001.jpg" class="img-fluid banner2 hover-effect" />
-                      </a>
-                    </div>
-                    <div class="col-md-4 position-relative" id="index">
-                      <div class="overlap-container">
-                        <div class="image-container">
-                          <a href="<c:url value='/sercotec'/>">
-                            <img src="resources/img/galeria-destacados/abeja2.0.jpg" class="img-fluid hover-effect" />
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-4" id="right-column">
-                      <a href="<c:url value='/sercotec'/>">
-                        <img src="resources/img/galeria-destacados/capital-semilla.jpg"
-                          class="img-fluid  hover-effect" />
-                      </a>
-                      <a href="<c:url value='/menuiso'/>">
-                        <img src="resources/img/galeria-destacados/iso14001.jpg" class="img-fluid banner2 hover-effect" />
-                      </a>
-                    </div>
-                  </div>
+<!-- Galeria Destacados -->
+<div class="container-fluid buscadorcarrusel pt-3 fade-in">
+  <div class="destacados">
+    <div class="slide">
+      <div id="carouselExampleIndicators" class="carousel slide slide-home" data-ride="carousel">
+        <ol class="carousel-indicators" id="carousel-indicators"></ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="slidefijo">
+              <div class="row">
+                <div class="col-md-4">
+                  <a href="<c:url value='/menuiso'/>" id="left-column">
+                    <img src="resources/img/galeria-destacados/iso9001.png" class="img-fluid hover-effect" />
+                  </a>
+                  <a href="<c:url value='/menuiso'/>">
+                    <img src="resources/img/galeria-destacados/iso45001.jpg" class="img-fluid banner2 hover-effect" />
+                  </a>
+                </div>
+                <div class="col-md-4 p-2 p-md-0" id="index">
+                  <a href="<c:url value='/sercotec'/>">
+                    <img src="resources/img/galeria-destacados/abeja2.0.jpg" class="img-fluid hover-effect" />
+                  </a>
+                </div>
+                <div class="col-md-4" id="right-column">
+                  <a href="<c:url value='/sercotec'/>">
+                    <img src="resources/img/galeria-destacados/capital-semilla.jpg" class="img-fluid hover-effect" />
+                  </a>
+                  <a href="<c:url value='/menuiso'/>">
+                    <img src="resources/img/galeria-destacados/iso14001.jpg" class="img-fluid banner2 hover-effect" />
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</div>
+
     <br><br>
     <!-- Carrusel  -->
     <div class="container-fluid pt-3 fade-in">
@@ -105,6 +111,7 @@
     </div>
 
 <%@include file="fixed/footer.jsp" %>
+</div>
   <script src="resources/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
     integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"

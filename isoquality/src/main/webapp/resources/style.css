@@ -1,6 +1,31 @@
 body {
   font-family: 'Montserrat', sans-serif;
-  
+  overflow-x: hidden;
+  font-size: 16px; /* Tamaño de fuente base */
+}
+
+p.lead {
+	font-size:1.75rem;
+}
+
+h2 small{
+	font-size:2rem;
+}
+
+h4.font-weight-bold small{
+	font-size:1.75rem;
+}
+
+h5.font-weight-bold small{
+	font-size:1.5rem;
+}
+
+p.lead ul {
+	font-size:1.25rem;
+}
+
+.container-fluid {
+	max-width: 100%
 }
 
 .letter-spacing-2 {
@@ -42,6 +67,10 @@ body {
 /* Navbar */
 
 /* Separar los elementos del navbar */
+ #navbar a{
+ font-size:1rem;
+ }
+
 .navbar-nav .nav-link {
   margin-right: 10px;
   margin-left: 10px;
@@ -515,7 +544,13 @@ Full screen Modal
 .service-container {
   max-width: 800px;
   margin: 50px auto;
+  
 }
+
+.service-container.lead{
+	font-size:1.5rem;
+}
+
 
 .service-title {
   font-size: 24px;
