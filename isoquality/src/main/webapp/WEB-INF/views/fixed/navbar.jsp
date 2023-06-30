@@ -1,4 +1,4 @@
- <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %> 
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %> 
  <head>
  <link rel="stylesheet" href="<c:url value='https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap'/>">
  </head>
