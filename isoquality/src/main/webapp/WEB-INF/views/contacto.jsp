@@ -35,7 +35,7 @@
 <body>
 	<div class="container-fluid">
 	<%@include file="fixed/navbar.jsp"%>
-
+<div class="row">
 		<div class="col-lg-8">
 			<div class="form-container fade-in">
 				<h2>Solicita una Evaluación Gratuita</h2>
