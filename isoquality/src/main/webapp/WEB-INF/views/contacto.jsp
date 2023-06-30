@@ -35,7 +35,7 @@
 <body>
 	<div class="container-fluid">
 	<%@include file="fixed/navbar.jsp"%>
-
+<div class="row">
 		<div class="col-lg-8">
 			<div class="form-container fade-in">
 				<h2>Solicita una Evaluación Gratuita</h2>
@@ -109,7 +109,7 @@
 					alt="Imagen 3">
 			</div>
 		</div>
-
+</div>
 		<%@include file="fixed/footer.jsp"%>
 		</div>
 		<script src="resources/main.js"></script>
