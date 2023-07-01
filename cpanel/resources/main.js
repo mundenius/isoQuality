@@ -58,9 +58,9 @@ function limpiarCamposFormulario() {
 }
 
 $(document).ready(function () {
-	$('#navbar').load('./navbar.html');
+	$('#navbar').load('/navbar.html');
 });
 
 $(document).ready(function () {
-	$('#footerfile').load('./footer.html');
+	$('#footerfile').load('/footer.html');
 });
