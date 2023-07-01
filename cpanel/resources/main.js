@@ -60,3 +60,7 @@ function limpiarCamposFormulario() {
 $(document).ready(function () {
 	$('#navbar').load('./navbar.html');
 });
+
+$(document).ready(function () {
+	$('#footerfile').load('./footer.html');
+});
