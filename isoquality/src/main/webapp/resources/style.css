@@ -5,7 +5,7 @@ body {
 }
 
 p.lead {
-	font-size:1.75rem;
+	font-size:1.25rem;
 }
 
 h2 small{
@@ -21,7 +21,7 @@ h5.font-weight-bold small{
 }
 
 p.lead ul {
-	font-size:1.25rem;
+	font-size:0.75rem;
 }
 
 .container-fluid {
