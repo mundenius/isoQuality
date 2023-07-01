@@ -109,8 +109,10 @@
 					alt="Imagen 3">
 			</div>
 		</div>
-</div>
-		<%@include file="fixed/footer.jsp"%>
+
+		<div class="justify-content-center" id="footer">
+
+		</div>
 		</div>
 		<script src="resources/main.js"></script>
 		<script
