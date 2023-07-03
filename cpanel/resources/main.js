@@ -2,51 +2,56 @@
 $(document).ready(function() {
 	$('.fade-in').addClass('fade-in');
 });
+
 function enviarFormularioAjax() {
-	var empresa = $("#empresa").val();
-	var nombre = $("#nombre").val();
-	var cargo = $("#cargo").val();
-	var email = $("#email").val();
-	var pais = $("#pais").val();
-	var telefono = $("#telefono").val();
-	var norma = $("#norma").val();
+  
+  // Obtener el token de respuesta del reCAPTCHA
+  var recaptchaResponse = grecaptcha.getResponse();
 
-	var datos = {
-		Empresa: empresa,
-		Nombre: nombre,
-		Cargo: cargo,
-		Email: email,
-		Pais: pais,
-		Telefono: telefono,
-		Norma: norma
-	};
+  // Verificar si se ha seleccionado el reCAPTCHA
+  if (recaptchaResponse.length === 0) {
+    // Mostrar mensaje de error utilizando SweetAlert
+    Swal.fire({
+      icon: 'error',
+      title: 'Error',
+      text: 'Por favor, completa el reCAPTCHA antes de enviar el formulario.'
+    });
+    return;
+  }  
+  // Resto del código para enviar el formulario utilizando Ajax
+  var empresa = $("#empresa").val();
+  var nombre = $("#nombre").val();
+  var cargo = $("#cargo").val();
+  var email = $("#email").val();
+  var pais = $("#pais").val();
+  var telefono = $("#telefono").val();
+  var norma = $("#norma").val();
 
-	$.ajax({
-		url: "https://formsubmit.co/ajax/bpalacios.dev@gmail.com",
-		method: "POST",
-		data: datos,
-		success: function(response) {
-			console.log(response);
-			limpiarCamposFormulario();
-			mostrarMensajeConfirmacion();
-			ocultarMensajeConfirmacionDespuesDeTiempo(5000); // Ocultar después de 3 segundos (3000 ms)
+  var datos = {
+    Empresa: empresa,
+    Nombre: nombre,
+    Cargo: cargo,
+    Email: email,
+    Pais: pais,
+    Telefono: telefono,
+    Norma: norma
+  };
 
-		},
-		error: function(error) {
-			console.error(error);
-		}
-	});
+  $.ajax({
+    url: "https://formsubmit.co/ajax/clientes@isoquality.cl",
+    method: "POST",
+    data: datos,
+    success: function(response) {
+      console.log(response);
+      limpiarCamposFormulario()
+      mostrarMensajeConfirmacion();
+    },
+    error: function(error) {
+      console.error(error);
+    }
+  });
 }
 
-function mostrarMensajeConfirmacion() {
-	$("#mensaje-confirmacion").text("¡Formulario enviado correctamente!").show();
-	
-}
-function ocultarMensajeConfirmacionDespuesDeTiempo(tiempo) {
-  setTimeout(function() {
-    $("#mensaje-confirmacion").hide();
-  }, tiempo);
-}
 function limpiarCamposFormulario() {
   $("#empresa").val("");
   $("#nombre").val("");
@@ -56,6 +61,16 @@ function limpiarCamposFormulario() {
   $("#telefono").val("");
   $("#norma").val("");
 }
+
+
+function mostrarMensajeConfirmacion() {
+  Swal.fire({
+    icon: 'success',
+    title: '¡Formulario enviado!',
+    text: 'El formulario se ha enviado correctamente.'
+  });
+}
+
 
 $(document).ready(function () {
 	$('#navbar').load('/navbar.html');
